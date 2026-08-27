@@ -320,9 +320,10 @@ jupyter notebook
 ## Author
 
 **Sarvesh Kumar Sharma**
+I created this project inspired by the work of this man.
+and here's the credits for hem. 
 
 - GitHub: [@shsarv](https://github.com/shsarv)
-- LinkedIn: [in/shsarv](https://linkedin.com/in/shsarv)
 
 ---
 
