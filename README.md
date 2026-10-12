@@ -26,6 +26,7 @@
   - [3. Feature Engineering](#3-feature-engineering)
   - [4. Visualization](#4-visualization)
 - [Key Findings](#key-findings)
+- [Interactive Dashboard](#interactive-dashboard)
 - [Technical Specifications](#technical-specifications)
 - [How to Reproduce](#how-to-reproduce)
 - [Notebook Guide](#notebook-guide)
@@ -163,6 +164,33 @@ The `CovidDataViz` class provides a unified interface for all plots:
 - **Rankings:** `plot_highest_country_stats(metric)` — top-N countries by confirmed, recovered, dead, active, or mortality
 - **Growth analysis:** `plot_growth(countries, periods)` — growth factor trends with configurable averaging windows
 - **Socioeconomic:** `show_corr_mat()` — correlation matrix; `plot_with_slope(x, y)` — scatter plots with regression lines
+
+---
+
+## Interactive Dashboard
+
+This repository now includes a portfolio-ready Streamlit dashboard in `dashboard.py`.
+It turns the analysis into an interactive product that can be shown in a CV,
+GitHub portfolio, or live demo.
+
+The dashboard includes:
+
+- Global KPI cards for confirmed cases, deaths, recoveries, active cases, and 7-day averages
+- Interactive global trend charts
+- Country-level deep dives with daily confirmed cases and deaths
+- Top-country rankings by confirmed, deaths, active, or recovered cases
+- Multi-country comparison lines
+- A sortable latest-country summary table
+
+Run it locally:
+
+```bash
+pip install -r requirements.txt
+streamlit run dashboard.py
+```
+
+If `data/processed` exists, the dashboard uses the project's generated CSV files.
+If not, it automatically loads the public Johns Hopkins CSSE time-series CSVs.
 
 ---
 

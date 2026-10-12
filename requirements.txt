@@ -3,3 +3,5 @@ numpy>=1.18
 matplotlib>=3.0
 scipy>=1.5
 wbdata>=0.3
+plotly>=5.20
+streamlit>=1.33
